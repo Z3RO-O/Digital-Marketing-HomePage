@@ -1,0 +1,127 @@
+:root {
+	--red: #ff3147;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Poppins", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+/* 
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
+
+section,
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.first-subtitle,
+.subtitle {
+	color: var(--red);
+	font-weight: 600;
+	font-size: 30px;
+}
+.subtitle {
+	font-size: 24px;
+}
+.first-title,
+.title {
+	font-weight: bold;
+	font-size: 60px;
+	letter-spacing: 0px;
+	line-height: normal;
+}
+.title {
+	font-size: 45px;
+}
+
+.content {
+	font-size: 16px;
+}
+
+.project-card {
+	width: 370px;
+	height: 190px;
+	padding: 30px;
+	background-color: #fafafa;
+}
+.project-card:hover {
+	background-color: var(--red);
+	color: white;
+}
+
+.growth-card {
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	width: 256px;
+	height: 230px;
+}
+
+.growth-card:hover {
+	box-shadow: 3px 6px 20px #672c2c1f;
+}
+
+.custom-btn {
+	background-color: var(--red);
+	color: white;
+	border-radius: 2px;
+	padding: 15px 28px;
+	font-size: 14px;
+	border: none;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.custom-btn:hover {
+	background-color: white;
+	color: black;
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--red);
+	border-radius: 10px;
+	border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #d6293e;
+}
+
+/* For Firefox */
+body {
+	scrollbar-width: thin;
+	scrollbar-color: var(--red) #f1f1f1;
+}
