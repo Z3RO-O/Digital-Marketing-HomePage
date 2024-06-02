@@ -83,6 +83,7 @@ footer {
 	background-color: white;
 	width: 256px;
 	height: 230px;
+	cursor: pointer;
 	transition: background-color 0.3s, box-shadow 0.3s;
 }
 
@@ -235,6 +236,7 @@ body {
 
 	.project-card {
 		width: 100%;
+		cursor: pointer;
 	}
 
 	.container.d-flex {
