@@ -30,15 +30,17 @@
 						Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed
 						lacus nec risus finibus feugiat et fermentum
 					</p>
-					<button type="button" class="custom-btn" onclick="">
+					<button
+						type="button"
+						class="custom-btn"
+						data-bs-toggle="modal"
+						data-bs-target="#modal"
+						data-bs-whatever="@mdo"
+					>
 						CONTACT US
 					</button>
 				</div>
-				<img
-					src="assets/hero.png"
-					alt=""
-					style="height: 737px; width: 487px"
-				/>
+				<img src="assets/hero.png" alt="" style="height: 737px; width: 487px" />
 			</section>
 			<section style="background-color: #fafafa; width: 100%">
 				<div style="width: 1170px">
@@ -55,11 +57,33 @@
 							</p>
 						</div>
 					</div>
-					<img
-						src="assets/hero.png"
-						alt=""
-						style="height: 526px; width: 370px"
-					/>
+					<div class="carousel">
+						<div class="carousel-inner" id="carousel-inner">
+							<div class="carousel-item">
+								<img src="assets/1.png" alt="Image 1" />
+							</div>
+							<div class="carousel-item">
+								<img src="assets/2.png" alt="Image 2" />
+							</div>
+							<div class="carousel-item">
+								<img src="assets/3.png" alt="Image 3" />
+							</div>
+							<div class="carousel-item">
+								<img src="assets/2.png" alt="Image 4" />
+							</div>
+							<div class="carousel-item">
+								<img src="assets/3.png" alt="Image 5" />
+							</div>
+							<div class="carousel-item">
+								<img src="assets/1.png" alt="Image 6" />
+							</div>
+						</div>
+						<div class="carousel-buttons">
+							<div class="carousel-button" data-slide="0"></div>
+							<div class="carousel-button" data-slide="1"></div>
+							<div class="carousel-button" data-slide="2"></div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section>
@@ -225,8 +249,103 @@
 			<img src="assets/footer-group.png" alt="" />
 		</footer>
 
+		<!-- Contact us modal -->
+		<div
+			class="modal fade"
+			id="modal"
+			tabindex="-1"
+			aria-labelledby="modalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="modalLabel">Talk to us</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body" style="margin: 20px 10px 20px 10px">
+						<form
+							id="ajaxForm"
+							action="https://getform.io/f/wbrkmmxa"
+							method="POST"
+						>
+							<div class="form-floating mb-3">
+								<input
+									type="email"
+									name="workEmail"
+									class="form-control"
+									required
+									id="email"
+									placeholder="Work email*"
+									aria-describedby="emailHelp"
+								/>
+								<label for="email">Work email*</label>
+							</div>
+							<div class="d-flex justify-content-between">
+								<div class="form-floating mb-3">
+									<input
+										type="text"
+										name="firstName"
+										required
+										class="form-control"
+										id="firstName"
+										placeholder="First name*"
+									/>
+									<label for="firstName">First name*</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input
+										type="text"
+										name="lastName"
+										required
+										class="form-control"
+										id="lastName"
+										placeholder="Last name*"
+									/>
+									<label for="lastName">Last name*</label>
+								</div>
+							</div>
+							<div class="mb-3 form-check">
+								<input type="hidden" name="subscribe" value="no" />
+								<input
+									type="checkbox"
+									name="subscribe"
+									value="yes"
+									checked
+									class="form-check-input"
+									style="border-color: #ff3366"
+									onfocus="this.style.boxShadow = '0 0 0 0'"
+									id="check"
+								/>
+								<label
+									class="form-check-label"
+									for="check"
+									style="color: #616678"
+									>I agree to Fyle's terms and conditions, and provide consent
+									to send me communication.</label
+								>
+							</div>
+							<button
+								type="submit"
+								class="custom-btn2"
+								style="font-weight: 500"
+							>
+								Contact Us
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- SCRIPTS -->
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
