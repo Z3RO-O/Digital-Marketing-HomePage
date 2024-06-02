@@ -155,10 +155,27 @@ footer {
 
 /* Owl Carousel */
 
+.common-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.3s;
+	z-index: 1;
+}
+
+.card:hover .common-content {
+	opacity: 1;
+}
+
 .card {
+	position: relative;
 	height: 526px;
 	width: 370px;
 }
+
 .owl-dots {
 	text-align: left;
 	margin-top: 40px;
