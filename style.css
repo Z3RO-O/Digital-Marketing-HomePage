@@ -69,6 +69,11 @@ footer {
 	color: white;
 }
 
+.selected {
+	background-color: var(--red);
+	color: white;
+}
+
 .growth-card {
 	display: flex;
 	text-align: center;
