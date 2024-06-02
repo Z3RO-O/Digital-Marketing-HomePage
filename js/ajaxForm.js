@@ -16,8 +16,13 @@ $("#ajaxForm").submit(function (e) {
 		.done(function () {
 			$(".success").addClass("is-active");
 			$("#ajaxForm")[0].reset();
+			// Show success toast
+			toastr.success("Submitted Successfully!");
+			// Close modal
+			$("#modal").modal("hide");
 		})
 		.fail(function () {
-			alert("An error occurred! Please try again later.");
+			// Show error toast
+			toastr.error("An error occurred! Please try again later.");
 		});
 });
