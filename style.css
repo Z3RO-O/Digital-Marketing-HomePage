@@ -153,7 +153,30 @@ footer {
 	margin-bottom: 10px;
 }
 
-/* Carousel */
+/* Owl Carousel */
+
+.card {
+	height: 526px;
+	width: 370px;
+}
+.owl-dots {
+	text-align: left;
+	margin-top: 40px;
+}
+.owl-dot {
+	height: 15px;
+	width: 15px;
+	margin: 0 5px;
+	outline: none;
+	border-radius: 14px;
+	border: 2px solid var(--red) !important;
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+}
+.owl-dot.active,
+.owl-dot:hover {
+	background: var(--red) !important;
+}
 
 /* Scrollbar Customization */
 ::-webkit-scrollbar {
