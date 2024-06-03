@@ -27,18 +27,24 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
 		/>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+		<link
+			href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+			rel="stylesheet"
+		/>
 		<title>Digital Marketing</title>
 	</head>
 	<body>
 		<!-- MAIN -->
 		<main class="d-flex flex-column justify-content-center align-items-center">
-			<section style="width: 1170px">
+			<section class="hero">
 				<div class="col-md">
 					<p class="first-subtitle">AWARD WINNING</p>
 					<p class="first-title">DIGITAL MARKETING AGENCY</p>
-					<p class="content" style="width: 584px">
+					<p class="content">
 						Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
 						Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed
 						lacus nec risus finibus feugiat et fermentum
@@ -53,17 +59,15 @@
 						CONTACT US
 					</button>
 				</div>
-				<img src="assets/hero.png" alt="" style="height: 737px; width: 487px" />
+				<img src="assets/hero.png" alt="" class="image" style="" />
 			</section>
 			<section style="background-color: #fafafa; width: 100%">
-				<div style="width: 1170px">
+				<div class="what-do">
 					<div class="col-md">
 						<p class="subtitle">WHAT WE DO</p>
 						<div class="d-flex align-items-center">
-							<p class="title" style="width: 442px; margin-right: 100px">
-								SERVICES PROVIDE FOR YOU
-							</p>
-							<p class="content" style="width: 584px">
+							<p class="title" style="">SERVICES PROVIDE FOR YOU</p>
+							<p class="content" style="">
 								Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
 								Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed
 								lacus nec risus finibus feugiat et fermentum
@@ -119,7 +123,7 @@
 					<p class="title" style="padding-bottom: 64px">WHY WE ARE THE BEST</p>
 					<div class="container d-flex align-items-center">
 						<div class="row">
-							<div class="col" style="width: 256px; text-align: left">
+							<div class="col" style="text-align: left">
 								<img
 									src="assets/1.svg"
 									alt=""
@@ -131,7 +135,7 @@
 								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
 								diam nonumy.
 							</div>
-							<div class="col" style="width: 256px; text-align: left">
+							<div class="col" style="text-align: left">
 								<img
 									src="assets/2.svg"
 									alt=""
@@ -143,7 +147,7 @@
 								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
 								diam nonumy.
 							</div>
-							<div class="col" style="width: 256px; text-align: left">
+							<div class="col" style="text-align: left">
 								<img
 									src="assets/3.svg"
 									alt=""
@@ -155,7 +159,7 @@
 								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
 								diam nonumy.
 							</div>
-							<div class="col" style="width: 256px; text-align: left">
+							<div class="col" style="text-align: left">
 								<img
 									src="assets/4.svg"
 									alt=""
@@ -171,7 +175,7 @@
 					</div>
 				</div>
 			</section>
-			<section style="width: 1170px">
+			<section class="project" style="">
 				<div class="text-center">
 					<p class="subtitle">OUR PROJECT</p>
 					<p class="title" style="padding-bottom: 64px">WHY WE ARE THE BEST</p>
@@ -187,7 +191,7 @@
 						<div class="container">
 							<div class="col" style="text-align: left">
 								<div
-									class="row project-card"
+									class="project-card"
 									style="cursor: pointer"
 									data-image="assets/image1.jpg"
 								>
@@ -200,7 +204,7 @@
 									</p>
 								</div>
 								<div
-									class="row project-card selected"
+									class="project-card selected"
 									style="cursor: pointer"
 									data-image="assets/image2.png"
 								>
@@ -213,7 +217,7 @@
 									</p>
 								</div>
 								<div
-									class="row project-card"
+									class="project-card"
 									style="cursor: pointer"
 									data-image="assets/image3.jpg"
 								>
@@ -231,7 +235,7 @@
 				</div>
 			</section>
 			<section style="background-color: #fafafa; width: 100%">
-				<div class="text-center" style="width: 1170px">
+				<div class="text-center" class="project" style="">
 					<p class="subtitle">EXPERT'S GROWTH</p>
 					<p class="title" style="padding-bottom: 64px">OUR COMPANY GROWTH</p>
 					<div
@@ -276,10 +280,7 @@
 							class="position-absolute z-n1"
 							style="left: -20px; top: -20px; width: 64px; height: 45px"
 						/>
-						<p
-							class="content"
-							style="width: 620px; text-align: left; font-weight: 500"
-						>
+						<p class="content" style="text-align: left; font-weight: 500">
 							Jannat Tumpa The standard chunk of Lorem Ipsum used since the
 							1500s is reproduced below for those interested. Sections Bonorum
 							et Malorum original.
@@ -398,6 +399,8 @@
 		<script src="js/changeImage.js"></script>
 		<script src="js/ajaxForm.js"></script>
 		<script src="jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
