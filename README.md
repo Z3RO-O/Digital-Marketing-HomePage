@@ -6,6 +6,8 @@ A project where I've leveraged HTML, CSS, Bootstrap, JavaScript and JQuery to cr
 
 - **Desired Functionalities**: The landing page has all the functionalities which were required.
 
+**Responsive Design**: The landing page seamlessly adapts to various screen sizes, ensuring an optimal user experience on desktops, tablets, and mobile devices.
+
 - **User Interface (UI) Design**: Following design principles, I've created an engaging and user-friendly interface that enhances the overall aesthetic and usability.
 
 ## Preview
